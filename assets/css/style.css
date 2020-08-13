@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navigator {
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+}
+.navigator__logo {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.navigator__menu {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.main__hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.main2__caracteristicas {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.main2__cuerpo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cardssection {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.cardssection__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.navigator__logo {
+  display: flex;
+  justify-content: center;
+}
+.navigator__lista {
+  display: flex;
+  grid-gap: 20px;
+}
+
+.display-inline {
+  display: inline;
+}
+
+.main__hero {
+  background-image: url(../img/bg-hero.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 800px;
+}
+.main__txt {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+.main2__tittle {
+  display: flex;
+  justify-content: center;
+}
+.main2__grafico {
+  display: flex;
+  justify-content: center;
+}
+.main2__estadisticas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer {
+  color: white;
+  background-color: black;
+  height: 100px;
+}
+.footer__nav {
+  display: flex;
+  align-items: center;
+}
+.footer__list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  grid-gap: 50px;
+}
+.footer__rights {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 50px;
+  align-items: center;
+}
+
+.cardsection__precios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.cardssection {
+  background-image: url(../img/bg-price.svg);
+  background-size: 100%;
+  height: 800px;
+  width: 100%;
+}
+.cardssection__carditem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */

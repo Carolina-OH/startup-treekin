@@ -1,0 +1,42 @@
+.navigator{
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    &__logo{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    &__menu{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+}
+.main{
+    &__hero{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+}
+.main2{
+    &__caracteristicas{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    &__cuerpo{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.cardssection{
+    display: grid;
+    grid-template-columns: 1fr;
+&__cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

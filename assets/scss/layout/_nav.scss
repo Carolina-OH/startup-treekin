@@ -1,0 +1,13 @@
+.navigator{
+    &__logo{
+        display: flex;
+        justify-content: center;
+    }
+    &__lista{
+        display: flex;
+        grid-gap: 20px;
+    }
+}
+.display-inline{
+    display: inline;
+}

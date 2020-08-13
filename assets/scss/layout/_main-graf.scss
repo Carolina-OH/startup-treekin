@@ -1,0 +1,16 @@
+.main2{
+    &__tittle{
+    display: flex;
+    justify-content: center;
+    }
+    &__grafico{
+    display: flex;
+    justify-content: center; 
+    }
+    &__estadisticas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+    }
+    
+}
