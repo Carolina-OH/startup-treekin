@@ -1,0 +1,13 @@
+@mixin respond-to-sm($break-point){
+    @media (max-width:767.98px){
+      @content    
+    }
+  
+};
+
+@mixin respond-to-md($break-point){
+    @media (min-width:$break-point){
+      @content    
+    }
+  
+};

@@ -1,13 +1,82 @@
 .navigator{
-    &__logo{
-        display: flex;
-        justify-content: center;
+
+    display: grid;
+    grid-template-rows: minmax(min-content,100px) min-content;
+
+    &__menu{
+        align-content: space-evenly;
     }
-    &__lista{
-        display: flex;
-        grid-gap: 20px;
+
+    &__links{
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color:black
+        }
+    
+    }
+    &__buttons{
+      margin-right: 100px;
+      button{
+          margin-right: 20px;
+      }
+    }
+    &__dropdown{
+        display: none;
+    
+      place-items: left;
+        a{
+            text-decoration: none;
+            color: black;
+            padding: 10px 0 10px 40px;
+            background-color: white;
+        }
+        a:hover{
+        background-color: lightblue;    
+        }
+
+    }
+    &__buttonsdrop{
+        display: grid;
+        padding-top: 30px;
+        padding-bottom: 20px;
+
     }
 }
-.display-inline{
-    display: inline;
+
+.navigator{
+    img{
+        margin-left: 100px;
+    }
+    i{
+        display: none;
+    }
+}
+
+@include respond-to-sm($bp-sm){
+    .navigator{
+        &__menu{
+            display: grid;
+            grid-column: span 2;
+            img{
+                margin-left: 50px;
+                width: 30px;
+            }
+            
+        }
+        &__links{
+            display: none;
+        }
+        &__buttons{
+            display: none;
+        }
+        i{
+            display: flex;
+            justify-content:flex-end;
+            margin-right: 70px;
+            
+        }
+    }
 }

@@ -1,10 +1,11 @@
 .main{
+
     &__hero{
     background-image: url(../img/bg-hero.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
-    height: 800px;
+    height: 150vh;
     }
     &__txt{
         display: flex;

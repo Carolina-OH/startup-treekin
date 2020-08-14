@@ -11,19 +11,30 @@
 
 <body>
     <nav class="navigator">
-        <div class="navigator__logo">
-            <object data="assets/img/Logo.svg" type="image/svg+xml"></object>
+        <div class="navigator__menu">
+            <img src="assets/img/Logo.svg" alt="">
+            <div class="navigator__links d-lg-block">
+                <a href="#" class="">Acerca de</a>
+                <a href="#" class="">Características</a>
+                <a href="#" class="">Precios</a>
+            </div>
+            <div class="navigator__buttons">
+                <button>Iniciar Sesión</button>
+                <button>Registrate</button>
+            </div>
+            <i class="fas fa-bars" onclick="menu()"></i>
         </div>
-        <div class=navigator__menu>
-            <ul class="navigator__lista">
-                <li class="display-inline">Acerca de</li>
-                <li class="display-inline">Características</li>
-                <li class="display-inline">Precios</li>
-            </ul>
-            <ul class="navigator_buttons">
-                <li class="display-inline"><button>Iniciar Sesión</button></li>
-                <li class="display-inline"><button>Registrate</button></li>
-            </ul>
+
+        <div class="navigator__dropdown">
+            <a href="#" class="">Acerca de</a>
+            <a href="#" class="">Características</a>
+            <a href="#" class="">Precios</a>
+            <div class="navigator__buttonsdrop">
+                <a href="#" class="">Iniciar sesión</a>
+                <a href="#" class="">Registrate</a>
+
+            </div>
+
         </div>
     </nav>
 
@@ -108,6 +119,7 @@
         </div>
         <div class="footer__rights">© 2018 Trekk-in SPA.</div>
     </footer>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
