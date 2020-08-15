@@ -22,10 +22,8 @@
        margin-right: 50px;
        align-items: center;
    }
-}
-@include respond-to-sm($bp-sm){
-    .footer{
-        //mover de lugar con el viewbox al svg price
-       
-    }
+
+   &__item:hover{
+    opacity: 50%;
+   }
 }

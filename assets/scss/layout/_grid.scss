@@ -9,6 +9,7 @@
     &__menu{
         display: grid;
         grid-auto-flow: column;
+        grid-template-columns: max-content max-content;
        
         
       
@@ -39,7 +40,7 @@
     &__hero{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 150px ;
+    grid-template-rows: 1fr 1fr 1fr;
 
 }
 

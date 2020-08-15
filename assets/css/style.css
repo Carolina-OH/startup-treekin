@@ -15,6 +15,7 @@ body {
 .navigator__menu {
   display: grid;
   grid-auto-flow: column;
+  grid-template-columns: max-content max-content;
 }
 .navigator__buttons {
   display: grid;
@@ -39,7 +40,7 @@ body {
 .main__hero {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 150px;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 .main__caracteristicas {
   display: grid;
@@ -124,6 +125,9 @@ footer {
   text-decoration: none;
   color: black;
 }
+.navigator__links a:hover {
+  opacity: 50%;
+}
 .navigator__buttons {
   margin-right: 100px;
 }
@@ -131,12 +135,19 @@ footer {
   margin-right: 20px;
   border: none;
 }
+.navigator__buttons button:hover {
+  opacity: 50%;
+}
 .navigator__buttons .login {
   background-color: white;
+  cursor: pointer;
+  width: 100px;
 }
 .navigator__buttons .sign-up {
   background-color: lightseagreen;
   color: white;
+  cursor: pointer;
+  width: 100px;
 }
 .navigator__dropdown {
   display: none;
@@ -225,10 +236,12 @@ footer {
 .main__estadisticas {
   display: flex;
   flex-direction: column;
-  align-content: center;
+  align-items: center;
+  margin-right: 25%;
+  margin-left: 25%;
 }
-.main__estadisticas p {
-  margin-right: 50%;
+.main__estadisticas h1, .main__estadisticas p {
+  margin-top: 0;
 }
 
 .footer {
@@ -251,6 +264,9 @@ footer {
   justify-content: flex-end;
   margin-right: 50px;
   align-items: center;
+}
+.footer__item:hover {
+  opacity: 50%;
 }
 
 .cardsection__precios {
@@ -283,11 +299,11 @@ footer {
 }
 
 .card1 {
-  margin-left: 60%;
+  margin-left: 50%;
 }
 
 .card2 {
-  margin-right: 60%;
+  margin-right: 50%;
 }
 
 @media (max-width: 767.98px) {

@@ -10,7 +10,11 @@
             align-items: center;
             justify-content: center;
             text-decoration: none;
-            color:black
+            color:black;
+           
+        }
+        a:hover{
+            opacity: 50%;
         }
     
     }
@@ -20,12 +24,20 @@
           margin-right: 20px;
           border: none;
       }
+      button:hover{
+        opacity: 50%;
+        
+      }
       .login{
           background-color: white;
-      }
+          cursor: pointer;
+          width: 100px; 
+            }
       .sign-up{
          background-color: lightseagreen; 
          color: white;
+         cursor: pointer;
+         width: 100px;
       }
     }
     &__dropdown{
@@ -40,6 +52,7 @@
         }
         a:hover{
         background-color: lightblue;    
+       
         }
 
     }
