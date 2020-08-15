@@ -1,9 +1,10 @@
 .cardssection{
+    background-image: url(../img/bg-price.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
     .price{
-        position:absolute;
-        z-index: -999;
-        width: 100%;
-
+        display:none;
     }
 &__carditem{
     display: flex;
@@ -16,14 +17,24 @@
 .card1, .card2{
     background-color: white;
     padding: 100px;
+    margin-bottom: 100px;
+}
+
+.card1{
+    margin-left:60%;
+}
+.card2{
+    margin-right: 60%;
 }
 @include respond-to-sm($bp-sm){
     
     .cardssection{
+        background-image: none;
         .price{
+            display: block;
             position: absolute;
             z-index: -999;
-            width: auto;
+            
         }
         &_cards{
         margin-top: 20px;
@@ -32,6 +43,8 @@
     .card1, .card2{
         background-color: white;
         padding: 80px 50px 80px 50px;
+        margin: 0;
+      
     }
 
     

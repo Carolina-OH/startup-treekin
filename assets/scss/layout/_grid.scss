@@ -1,4 +1,8 @@
 //lg screen
+.container{
+    display: grid;
+    grid-template-rows:max-content;
+}
 .navigator{
     display: grid;
     grid-template-rows: minmax(min-content,100px) min-content;
@@ -30,18 +34,23 @@
     }
 }
 .main{
+    display: grid;
+    grid-template-rows: max-content max-content ;
     &__hero{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
-    grid-column:1/5;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 150px ;
+
 }
-}
-.main2{
-    &__caracteristicas{
+
+&__caracteristicas{
+    display: grid;
+    grid-template-rows: max-content max-content;
+   /*  &__caracteristicas{
         display: grid;
         grid-template-columns: 1fr;
-    }
+    }*/
+}
     &__cuerpo{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -51,7 +60,7 @@
 .cardssection{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows:300px 1fr;
+    grid-template-rows:300px max-content;
 &__cards{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -83,7 +92,7 @@ footer{
         grid-template-rows: auto;
     }
     }
-    .main2{
+    .main{
         &__caracteristicas{
             display: grid;
             grid-template-columns: 1fr;
@@ -98,7 +107,7 @@ footer{
     .cardssection{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows:auto;
+        grid-template-rows:max-content;
     &__cards{
         display: grid;
         grid-template-columns: 1fr;
