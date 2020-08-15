@@ -51,7 +51,7 @@
 .cardssection{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows:1fr 1fr;
+    grid-template-rows:300px 1fr;
 &__cards{
     display: grid;
     grid-template-columns: 1fr 1fr;
