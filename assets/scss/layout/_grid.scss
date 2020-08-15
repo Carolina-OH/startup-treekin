@@ -5,7 +5,7 @@
     &__menu{
         display: grid;
         grid-auto-flow: column;
-        align-content: space-evenly;
+       
         
       
     }
@@ -32,7 +32,9 @@
 .main{
     &__hero{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+    grid-column:1/5;
 }
 }
 .main2{
@@ -49,6 +51,7 @@
 .cardssection{
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows:1fr 1fr;
 &__cards{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -76,7 +79,8 @@ footer{
     .main{
         &__hero{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
     }
     }
     .main2{
@@ -84,23 +88,26 @@ footer{
             display: grid;
             grid-template-columns: 1fr;
         }
+    
         &__cuerpo{
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
         }
     }
     
     .cardssection{
         display: grid;
         grid-template-columns: 1fr;
+        grid-template-rows:auto;
     &__cards{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
     }
     }
     
-    footer{
+    .footer{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }  
-}
+ }

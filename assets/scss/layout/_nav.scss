@@ -1,8 +1,5 @@
 .navigator{
 
-    display: grid;
-    grid-template-rows: minmax(min-content,100px) min-content;
-
     &__menu{
         align-content: space-evenly;
     }
@@ -21,6 +18,14 @@
       margin-right: 100px;
       button{
           margin-right: 20px;
+          border: none;
+      }
+      .login{
+          background-color: white;
+      }
+      .sign-up{
+         background-color: lightseagreen; 
+         color: white;
       }
     }
     &__dropdown{
