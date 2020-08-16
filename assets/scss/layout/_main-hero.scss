@@ -50,3 +50,29 @@
             }
         }
     }
+//response to md
+@include respond-to-md($bp-md){
+    .main{
+    &__bg-hero{
+        position:static;
+    
+        }
+    &__txt{
+        display: block;
+        margin: 0 13px 0 13px;
+        h1{
+            font-size: $x-large;
+            margin-top:100px;
+            margin-bottom: 50px;
+            margin-left: 20px;
+            margin-right: 100px;
+        }
+        p{
+            font-size: $large;
+            text-align: left;
+            margin-left: 20px;
+            margin-right: 100px;
+        }
+        }
+    }
+}

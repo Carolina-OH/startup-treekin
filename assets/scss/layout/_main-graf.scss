@@ -66,3 +66,15 @@
             }
     }
 }
+
+//response to md
+@include respond-to-md($bp-md){
+    .main{
+        &__grafico{
+            display: flex;
+            margin-left: 0;
+            justify-content: center; 
+            animation: vanish 1s ease-in;
+            }
+    }
+}

@@ -109,3 +109,36 @@
             }
         }
 }
+
+@include respond-to-md($bp-md){
+    
+    .cardssection{
+        margin-bottom: 20px;
+        &_cards{
+        margin-top: 20px;
+        grid-gap: 0;
+        }
+        &__carditem{
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            justify-content: flex-start;
+            margin:0;
+        }
+    &__precios{
+        align-items: center;
+    }
+    }
+        .card1, .card2{
+            background-color: white;
+            padding: 10px;
+            margin: 0 60px 40px 60px;
+            height: 100%;
+            &:hover{
+                box-shadow: 10px 5px 5px $raising-black;
+            }
+           
+        }
+        
+}
+

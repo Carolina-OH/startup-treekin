@@ -6,7 +6,7 @@
 };
 
 @mixin respond-to-md($break-point){
-    @media (min-width:$break-point){
+    @media (min-width:$break-point)and(max-width:991.98px){
       @content    
     }
   

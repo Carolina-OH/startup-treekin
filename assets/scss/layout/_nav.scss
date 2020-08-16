@@ -86,13 +86,38 @@
 @include respond-to-sm($bp-sm){
     .navigator{
         &__menu{
-            display: grid;
-            grid-column: span 2;
             img{
                 margin-left: 20px;
                 width: 40px;
             }
             
+        }
+        &__links{
+            display: none;
+        }
+        &__buttons{
+            display: none;
+        }
+        i{
+            display: flex;
+            justify-content:flex-end;
+            margin-right: 30px;   
+            font-size: $x-large;         
+        }
+        i:hover{
+            opacity: 50%;
+        }
+    }
+}
+
+//responsive md
+@include respond-to-md($bp-md){
+    .navigator{
+        &__menu{
+            img{
+                margin-left: 20px;
+                width: 40px;
+            }
         }
         &__links{
             display: none;
