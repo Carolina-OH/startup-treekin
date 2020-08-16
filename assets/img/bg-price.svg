@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1440" height="893" viewBox="0 0 1440 893" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<svg  width="1440" height="893" viewBox="0 0 1440 893" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
     <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
-    <link rel="stylesheet" href="assets/style.css"/>
     <title>bg</title>
     <desc>Created with Sketch.</desc>
     
@@ -12,6 +11,5 @@
             </g>
         </g>
     </g>
-
 </svg>
 <!--preserveaspectratio=none-->

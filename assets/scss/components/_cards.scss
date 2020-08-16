@@ -26,25 +26,29 @@
 @include respond-to-sm($bp-sm){
     
     .cardssection{
+        background-image: url(../img/bg-price.svg);
+            background-size: cover;
+            background-position-x:-800px;
+            width: 100%;
+            background-repeat: no-repeat;
         .price{
-            position: absolute;
-            z-index: -999; 
-            height: 100%;           
+            display: none;                   
         }
         &_cards{
         margin-top: 20px;
-    }
-    }
-    .card1, .card2{
-        background-color: white;
-        padding: 10px 50px 10px 50px;
-        margin: 0;
-      
-    }
-    .card1{
-        margin-top: 20px;
-    }
-    .card2{
-        margin-bottom: 40px;
-    }   
+
+        }
+        }
+        .card1, .card2{
+            background-color: white;
+            padding: 10px 50px 10px 50px;
+            margin: 0;
+        
+        }
+        .card1{
+            margin-top: 20px;
+        }
+        .card2{
+            margin-bottom: 40px;
+        }   
 }

@@ -329,12 +329,24 @@ footer {
 .footer__item:hover {
   opacity: 50%;
 }
+@media (max-width: 767.98px) {
+  .footer .footer__rights, .footer .footer__list {
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 2%;
+    margin: 0;
+  }
+}
 
+.cardsection {
+  padding-bottom: 200px;
+}
 .cardsection__precios {
   display: flex;
   justify-content: center;
   align-items: flex-end;
   color: white;
+  padding-top: 200px;
 }
 
 .cardssection .price {
@@ -363,10 +375,15 @@ footer {
 }
 
 @media (max-width: 767.98px) {
+  .cardssection {
+    background-image: url(../img/bg-price.svg);
+    background-size: cover;
+    background-position-x: -800px;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
   .cardssection .price {
-    position: absolute;
-    z-index: -999;
-    height: 100%;
+    display: none;
   }
   .cardssection_cards {
     margin-top: 20px;

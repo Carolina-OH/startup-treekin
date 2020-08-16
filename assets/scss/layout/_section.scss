@@ -1,6 +1,10 @@
-.cardsection__precios{
+.cardsection{
+    padding-bottom: 200px;
+    &__precios{
     display: flex;
     justify-content:center;
     align-items:flex-end;
     color: white;
+    padding-top: 200px;
+}
 }
