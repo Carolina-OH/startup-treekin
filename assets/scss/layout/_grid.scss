@@ -40,17 +40,14 @@
     &__hero{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 100px ;
 
 }
 
 &__caracteristicas{
     display: grid;
     grid-template-rows: max-content max-content;
-   /*  &__caracteristicas{
-        display: grid;
-        grid-template-columns: 1fr;
-    }*/
+  
 }
     &__cuerpo{
         display: grid;
@@ -61,7 +58,7 @@
 .cardssection{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows:300px max-content;
+    grid-template-rows:200px max-content;
 &__cards{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -92,8 +89,6 @@ footer{
         grid-template-columns: 1fr;
         grid-template-rows: auto;
     }
-    }
-    .main{
         &__caracteristicas{
             display: grid;
             grid-template-columns: 1fr;

@@ -5,6 +5,23 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+@keyframes vanish {
+  100% {
+    opacity: 100%;
+  }
+  75% {
+    opacity: 75%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  25% {
+    opacity: 25%;
+  }
+  0% {
+    opacity: 0%;
+  }
+}
 .container {
   display: grid;
   grid-template-rows: max-content;
@@ -42,15 +59,11 @@ body {
 .main__hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 100px;
 }
 .main__caracteristicas {
   display: grid;
   grid-template-rows: max-content max-content;
-  /*  &__caracteristicas{
-       display: grid;
-       grid-template-columns: 1fr;
-   }*/
 }
 .main__cuerpo {
   display: grid;
@@ -60,7 +73,7 @@ body {
 .cardssection {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 300px max-content;
+  grid-template-rows: 200px max-content;
 }
 .cardssection__cards {
   display: grid;
@@ -91,7 +104,6 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
-
   .main__caracteristicas {
     display: grid;
     grid-template-columns: 1fr;
@@ -263,11 +275,12 @@ footer {
 .main__grafico {
   display: flex;
   justify-content: center;
+  animation: vanish 1s ease-in;
 }
 .main__estadisticas {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   margin-right: 25%;
   margin-left: 25%;
 }
@@ -324,14 +337,9 @@ footer {
   color: white;
 }
 
-.cardssection {
-  background-image: url(../img/bg-price.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-}
 .cardssection .price {
-  display: none;
+  position: relative;
+  z-index: -999;
 }
 .cardssection__carditem {
   display: flex;
@@ -355,13 +363,10 @@ footer {
 }
 
 @media (max-width: 767.98px) {
-  .cardssection {
-    background-image: none;
-  }
   .cardssection .price {
-    display: block;
     position: absolute;
     z-index: -999;
+    height: 100%;
   }
   .cardssection_cards {
     margin-top: 20px;
@@ -369,8 +374,16 @@ footer {
 
   .card1, .card2 {
     background-color: white;
-    padding: 80px 50px 80px 50px;
+    padding: 10px 50px 10px 50px;
     margin: 0;
+  }
+
+  .card1 {
+    margin-top: 20px;
+  }
+
+  .card2 {
+    margin-bottom: 40px;
   }
 }
 

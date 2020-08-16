@@ -1,10 +1,7 @@
 .cardssection{
-    background-image: url(../img/bg-price.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
     .price{
-        display:none;
+        position: relative;
+        z-index: -999;
     }
 &__carditem{
     display: flex;
@@ -29,12 +26,10 @@
 @include respond-to-sm($bp-sm){
     
     .cardssection{
-        background-image: none;
         .price{
-            display: block;
             position: absolute;
-            z-index: -999;
-            
+            z-index: -999; 
+            height: 100%;           
         }
         &_cards{
         margin-top: 20px;
@@ -42,10 +37,14 @@
     }
     .card1, .card2{
         background-color: white;
-        padding: 80px 50px 80px 50px;
+        padding: 10px 50px 10px 50px;
         margin: 0;
       
     }
-
-    
+    .card1{
+        margin-top: 20px;
+    }
+    .card2{
+        margin-bottom: 40px;
+    }   
 }
