@@ -190,7 +190,7 @@ footer {
     grid-column: span 2;
   }
   .navigator__menu img {
-    margin-left: 50px;
+    margin-left: 20px;
     width: 40px;
   }
   .navigator__links {
@@ -202,7 +202,7 @@ footer {
   .navigator i {
     display: flex;
     justify-content: flex-end;
-    margin-right: 70px;
+    margin-right: 30px;
     font-size: 30px;
   }
   .navigator i:hover {
@@ -237,13 +237,23 @@ footer {
 
 @media (max-width: 767.98px) {
   .main__bg-hero {
-    position: static;
-    width: 100%;
+    position: relative;
+    width: 160%;
+    right: 200px;
+    height: 150%;
+    bottom: 140px;
   }
   .main__txt {
     display: block;
-    margin-top: 0;
-    margin-left: 0;
+    margin: 0 13px 0 13px;
+  }
+  .main__txt h1 {
+    font-size: 40px;
+    margin-top: 10px;
+  }
+  .main__txt p {
+    font-size: 20px;
+    text-align: left;
   }
 }
 .main__tittle {
@@ -265,6 +275,23 @@ footer {
   margin-top: 0;
 }
 
+@media (max-width: 767.98px) {
+  .main__tittle {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 35px;
+  }
+  .main__estadisticas {
+    align-items: flex-start;
+    margin: 40px 10% 40px 10%;
+  }
+  .main__estadisticas h1 {
+    margin: 0 0 30px 0;
+  }
+  .main__estadisticas p {
+    line-height: 2;
+  }
+}
 .footer {
   color: white;
   background-color: black;

@@ -32,15 +32,24 @@
     @include respond-to-sm($bp-sm){
         .main{
         &__bg-hero{
-            position: static;
-            width: 100%;
+            position: relative;
+            width: 160%;
+            right: 200px;
+            height: 150%;
+            bottom: 140px;
         
             }
         &__txt{
             display: block;
-            margin-top: 0;
-            margin-left: 0;
-        
+            margin: 0 13px 0 13px;
+            h1{
+                font-size: $xxx-large;
+                margin-top:10px;
+            }
+            p{
+                font-size: $large;
+                text-align: left;
+            }
             }
         }
     }

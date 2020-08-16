@@ -85,7 +85,7 @@
             display: grid;
             grid-column: span 2;
             img{
-                margin-left: 50px;
+                margin-left: 20px;
                 width: 40px;
             }
             
@@ -99,7 +99,7 @@
         i{
             display: flex;
             justify-content:flex-end;
-            margin-right: 70px;   
+            margin-right: 30px;   
             font-size: $x-large;         
         }
         i:hover{

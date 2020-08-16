@@ -19,3 +19,26 @@
     }
     
 }
+
+@include respond-to-sm($bp-sm){
+    .main{
+   
+        &__tittle{
+            margin-top: 0;
+            margin-bottom: 50px;
+            font-size: $xx-large;
+        }
+
+        &__estadisticas{
+            align-items: flex-start;
+            margin: 40px 10% 40px 10%;
+            
+            h1{
+                margin: 0 0 30px 0;
+            }
+            p{
+                line-height: 2;
+            }
+        }
+    }
+}
