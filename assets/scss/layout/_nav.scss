@@ -30,12 +30,16 @@
           background-color: white;
           cursor: pointer;
           width: 100px; 
+          &:hover{
+              opacity: 50%;
+          }
             }
       .sign-up{
          background-color: $ball-blue; 
          color: white;
          cursor: pointer;
-         width: 100px;
+         width: 135px;
+         height: 35px;
         &:hover{
             background-color:$blue-lagoon ;
         }

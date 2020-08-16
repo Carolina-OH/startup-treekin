@@ -154,11 +154,15 @@ footer {
   cursor: pointer;
   width: 100px;
 }
+.navigator__buttons .login:hover {
+  opacity: 50%;
+}
 .navigator__buttons .sign-up {
   background-color: #2AB7CA;
   color: white;
   cursor: pointer;
-  width: 100px;
+  width: 135px;
+  height: 35px;
 }
 .navigator__buttons .sign-up:hover {
   background-color: #B1E4EB;
@@ -270,10 +274,13 @@ footer {
 .main__tittle {
   display: flex;
   justify-content: center;
+  font-size: 40px;
+  margin-bottom: 100px;
 }
 .main__grafico {
   display: flex;
   justify-content: center;
+  margin-left: 50%;
   animation: vanish 1s ease-in;
 }
 .main__estadisticas {
@@ -285,6 +292,12 @@ footer {
 }
 .main__estadisticas h1, .main__estadisticas p {
   margin-top: 0;
+}
+.main__estadisticas h1 {
+  font-size: 35px;
+}
+.main__estadisticas p {
+  line-height: 2;
 }
 
 @media (max-width: 767.98px) {
@@ -302,6 +315,14 @@ footer {
   }
   .main__estadisticas p {
     line-height: 2;
+  }
+}
+@media (max-width: 767.98px) {
+  .main__grafico {
+    display: flex;
+    margin-left: 0;
+    justify-content: center;
+    animation: vanish 1s ease-in;
   }
 }
 .footer {
@@ -346,7 +367,7 @@ footer {
   flex-direction: column;
   align-items: left;
   justify-content: center;
-  margin: 0 5% 0 5%;
+  margin: 1% 30px 10% 30px;
 }
 .cardssection__precios {
   display: flex;
@@ -357,32 +378,64 @@ footer {
 
 .card1, .card2 {
   background-color: white;
-  padding: 100px;
-  margin-bottom: 100px;
+  padding: 15px;
+  margin-bottom: 20px;
+  margin-top: 70px;
+  height: 400px;
 }
 .card1:hover, .card2:hover {
   box-shadow: 10px 5px 5px #221D23;
 }
 .card1 h3, .card2 h3 {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: normal;
+}
+.card1 h4, .card2 h4 {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 10px;
+}
+.card1 ul, .card2 ul {
+  line-height: 2;
+  font-size: 14px;
+}
+.card1 button, .card2 button {
+  width: 100%;
+  background-color: #2AB7CA;
+  border: none;
+  color: white;
+  font-weight: 700;
+  height: 35px;
+}
+.card1 hr, .card2 hr {
+  opacity: 50%;
 }
 
 .card1 {
-  margin-left: 50%;
+  margin-left: 200px;
+  margin-right: 0;
+}
+.card1 ul {
+  padding-bottom: 140px;
 }
 
 .card2 {
-  margin-right: 50%;
+  margin-right: 210px;
+  margin-left: 0;
+}
+.card2 ul {
+  padding-bottom: 55px;
 }
 
 @media (max-width: 767.98px) {
   .cardssection {
     background-image: url(../img/bg-price.svg);
     background-size: cover;
-    background-position-x: -860px;
+    background-position-x: -1100px;
     height: 1000px;
     background-repeat: no-repeat;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
   .cardssection .price {
     display: none;
@@ -396,30 +449,23 @@ footer {
     flex-direction: column;
     align-items: left;
     justify-content: flex-start;
-    margin: 0 20% 0 20%;
+    margin: 0;
+  }
+  .cardssection__precios {
+    align-items: center;
   }
 
   .card1, .card2 {
     background-color: white;
-    padding: 20px 50px 20px 50px;
-    margin: 0;
+    padding: 10px;
+    margin: 0 60px 40px 60px;
+    height: 100%;
   }
   .card1:hover, .card2:hover {
     box-shadow: 10px 5px 5px #221D23;
   }
-
-  .card1 {
-    margin-top: 20px;
-  }
-
-  .card2 {
-    margin-bottom: 40px;
-  }
-}
-@media (max-width: 767.98px) {
-  .cardsection {
-    padding-top: 200px;
-    padding-bottom: 200px;
+  .card1 ul, .card2 ul {
+    padding-bottom: 0;
   }
 }
 

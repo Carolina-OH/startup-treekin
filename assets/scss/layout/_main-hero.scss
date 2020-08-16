@@ -5,9 +5,7 @@
     top: 20;
     right: 0;
     z-index: -100;
-    width: 100%;
-    
-   
+    width: 100%; 
     }
     &__txt{
         display: flex;
@@ -19,9 +17,7 @@
         h1{
             font-weight: $primary-font-bold;
             font-size: $xxxxx-large;
-            margin-bottom: 0;
-            
-            
+            margin-bottom: 0;            
         }
         p{
             font-size:$large;
