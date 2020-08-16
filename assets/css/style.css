@@ -344,8 +344,9 @@ footer {
 .cardssection__carditem {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   justify-content: center;
+  margin: 0 5% 0 5%;
 }
 .cardssection__precios {
   display: flex;
@@ -358,6 +359,13 @@ footer {
   background-color: white;
   padding: 100px;
   margin-bottom: 100px;
+}
+.card1:hover, .card2:hover {
+  box-shadow: 10px 5px 5px #221D23;
+}
+.card1 h3, .card2 h3 {
+  font-size: 16px;
+  font-weight: normal;
 }
 
 .card1 {
@@ -383,15 +391,25 @@ footer {
     margin-top: 20px;
     grid-gap: 0;
   }
+  .cardssection__carditem {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+    margin: 0 20% 0 20%;
+  }
 
   .card1, .card2 {
     background-color: white;
-    padding: 10px 50px 10px 50px;
+    padding: 20px 50px 20px 50px;
     margin: 0;
+  }
+  .card1:hover, .card2:hover {
+    box-shadow: 10px 5px 5px #221D23;
   }
 
   .card1 {
-    margin-top: 100px;
+    margin-top: 20px;
   }
 
   .card2 {
