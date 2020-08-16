@@ -103,11 +103,12 @@ footer{
     .cardssection{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows:max-content;
+        grid-template-rows: 200px auto;
+
     &__cards{
         display: grid;
         grid-template-columns: 1fr;
-        grid-gap: 40px;
+        
     }
     }
     

@@ -1,4 +1,5 @@
 .cardssection{
+  
     .price{
         position: relative;
         z-index: -999;
@@ -8,8 +9,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
 }
+&__precios{
+    display: flex;
+    justify-content:center;
+    align-items:flex-end;
+    color: white;
+    }
 }
 .card1, .card2{
     background-color: white;
@@ -28,14 +34,15 @@
     .cardssection{
         background-image: url(../img/bg-price.svg);
             background-size: cover;
-            background-position-x:-800px;
-            width: 100%;
+            background-position-x: -860px;
+            height: 1000px;
             background-repeat: no-repeat;
         .price{
             display: none;                   
         }
         &_cards{
         margin-top: 20px;
+        grid-gap: 0;
 
         }
         }
@@ -46,9 +53,17 @@
         
         }
         .card1{
-            margin-top: 20px;
+            margin-top: 100px;
         }
         .card2{
             margin-bottom: 40px;
         }   
+}
+
+@include respond-to-sm($bp-sm){
+    .cardsection{
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+        
 }
