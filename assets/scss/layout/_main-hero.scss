@@ -12,9 +12,21 @@
         display: flex;
         flex-direction: column;
         align-content:flex-start;
-        margin-top: 100px;
-        margin-left: 50px;
-
+        text-align:left;
+        margin-left: 15%;
+        margin-right:13%;
+        h1{
+            font-weight: $primary-font-bold;
+            font-size: $xxxxx-large;
+            margin-bottom: 0;
+            
+            
+        }
+        p{
+            font-size:$large;
+            line-height: 2;
+            text-align: left;
+        }
     }
 }
     @include respond-to-sm($bp-sm){

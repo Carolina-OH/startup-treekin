@@ -23,38 +23,44 @@
       button{
           margin-right: 20px;
           border: none;
+          font-family: $primary-font;
       }
-      button:hover{
-        opacity: 50%;
-        
-      }
+     
       .login{
           background-color: white;
           cursor: pointer;
           width: 100px; 
             }
       .sign-up{
-         background-color: lightseagreen; 
+         background-color: $ball-blue; 
          color: white;
          cursor: pointer;
          width: 100px;
+        &:hover{
+            background-color:$blue-lagoon ;
+        }
       }
     }
     &__dropdown{
+        font-weight: $primary-font-bold;
         display: none;
-    
-      place-items: left;
+        place-items: left;
+        padding-left:10%;
+        padding-right: 10%;
         a{
             text-decoration: none;
             color: black;
             padding: 10px 0 10px 40px;
             background-color: white;
+            &:hover{
+                background-color: lightblue;    
+               
         }
-        a:hover{
-        background-color: lightblue;    
-       
-        }
-
+    }
+    .drop_signup{
+        background-color: $ball-blue;
+    }
+      
     }
     &__buttonsdrop{
         display: grid;
@@ -80,7 +86,7 @@
             grid-column: span 2;
             img{
                 margin-left: 50px;
-                width: 30px;
+                width: 40px;
             }
             
         }
@@ -93,7 +99,8 @@
         i{
             display: flex;
             justify-content:flex-end;
-            margin-right: 70px;            
+            margin-right: 70px;   
+            font-size: $x-large;         
         }
         i:hover{
             opacity: 50%;
