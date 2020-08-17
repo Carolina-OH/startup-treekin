@@ -146,3 +146,11 @@
         }
 }
 
+@include respond-to-lg($bp-lg){
+    .cardssection{
+        .price{
+            width: 110%;
+        
+        }
+    }
+}

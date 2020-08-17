@@ -35,3 +35,9 @@
        }
    }
 }
+
+@include respond-to-lg($bp-lg){
+    .footer{
+        margin-top: 200px;
+    }
+}

@@ -173,6 +173,50 @@ footer {
     grid-template-columns: 1fr 1fr;
   }
 }
+@media (min-width: 992px) {
+  .navigator {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .navigator__logo {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .navigator__menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column: span 2;
+  }
+
+  .main__hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  .main__caracteristicas {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .main__cuerpo {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .cardssection {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 350px 1fr;
+  }
+  .cardssection__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
 .navigator__menu {
   align-content: space-evenly;
 }
@@ -448,6 +492,11 @@ footer {
   }
 }
 
+@media (min-width: 992px) {
+  .footer {
+    margin-top: 200px;
+  }
+}
 .cardssection .price {
   position: relative;
   z-index: -999;
@@ -589,6 +638,11 @@ footer {
   }
   .card1:hover, .card2:hover {
     box-shadow: 10px 5px 5px #221D23;
+  }
+}
+@media (min-width: 992px) {
+  .cardssection .price {
+    width: 110%;
   }
 }
 
