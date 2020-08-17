@@ -225,8 +225,63 @@ footer{
         grid-template-columns: 1fr 1fr;
     }  
  }
-//repond to xl
- @include respond-to-xl($bp-xl){
+//respond to xl
+@include respond-to-xxl($bp-xl){
+    .navigator{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+       
+        &__logo{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        &__menu{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-column: span 2;
+        }
+    }
+    .main{
+        &__hero{
+        display: grid;
+        grid-template-columns: 1fr 1fr;   
+    }
+        &__caracteristicas{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows:max-content ;
+        }
+    
+        &__cuerpo{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: max-content max-content;
+        }
+    }
+    
+    .cardssection{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px max-content;
+    
+
+
+    &__cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    }
+    
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }  
+ }
+
+
+//repond to xxl
+ @include respond-to-xxl($bp-xxl){
     .navigator{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -264,9 +319,8 @@ footer{
     .cardssection{
         display: grid;
         grid-template-columns: 1fr;
+        grid-template-rows: 200px max-content;
     
-
-
     &__cards{
         display: grid;
         grid-template-columns: 1fr 1fr;

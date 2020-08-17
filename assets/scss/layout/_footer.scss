@@ -43,6 +43,11 @@
 }
 @include respond-to-xl($bp-xl){
     .footer{
-        margin-top:100px;
+        margin-top:0;
+    }
+}
+@include respond-to-xxl($bp-xxl){
+    .footer{
+        margin-top: 100px;
     }
 }

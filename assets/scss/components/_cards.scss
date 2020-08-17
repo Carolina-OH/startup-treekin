@@ -159,6 +159,21 @@
         .price{
             width: 110%;  
     }
+    &__precios{
+        padding-top: 100px;
+    }
+    .card1, .card2{
+       margin-bottom: 0;
+        }
+}
+}
+
+
+@include respond-to-xxl($bp-xxl){
+    .cardssection{
+        .price{
+            width: 110%;  
+    }
 
     &__precios{
         padding-top: 100px;
@@ -168,5 +183,13 @@
        margin-top: 100px;
        margin-bottom: 100px;
         }
+
+    .card1{
+        margin-left: 50%;
+    }
+    .card2{
+        margin-right: 50%;
+    }
 }
+
 }
