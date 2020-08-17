@@ -13,6 +13,12 @@
 };
 
 @mixin respond-to-lg($break-point){
+  @media (min-width:$break-point)and(max-width:1199.98px){
+    @content
+  }
+};
+
+@mixin respond-to-xl($break-point){
   @media (min-width:$break-point){
     @content
   }

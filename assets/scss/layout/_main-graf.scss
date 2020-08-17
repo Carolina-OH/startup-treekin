@@ -31,7 +31,7 @@
     }
     
 }
-
+//responsive sm
 @include respond-to-sm($bp-sm){
     .main{
    
@@ -52,20 +52,17 @@
                 line-height: 2;
             }
         }
+        &__grafico{
+                    display: flex;
+                    margin-left: 0;
+                    justify-content: center; 
+                    animation: vanish 1s ease-in;
+                    }
     }
 }
 
-//responsive sm
-@include respond-to-sm($bp-sm){
-    .main{
-        &__grafico{
-            display: flex;
-            margin-left: 0;
-            justify-content: center; 
-            animation: vanish 1s ease-in;
-            }
-    }
-}
+
+
 
 //response to md
 @include respond-to-md($bp-md){
@@ -78,3 +75,15 @@
             }
     }
 }
+
+//responsive lg
+
+// @include respond-to-lg{
+// }
+
+/*@include respond-to-xl($bp-xl){
+    .cardssection{
+        .card1, .card2{
+           margin-top: 0;
+    }
+}*/
